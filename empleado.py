@@ -3,6 +3,9 @@ class Empleado:
         self.nombre = 'Nombre'
         self.departamento ='Departamento'
 
+    def setNombre(self,valor):
+        self.nombre = valor
+        print('Nombre del ing: ',valor)
 
 class Gestor(Empleado):
     def __init__(self):
@@ -26,3 +29,6 @@ class Ingeniero(Trabajador):
     def __init__(self):
         super(Ingeniero,self).__init__()
         self.area = 'Area'
+
+ing=Ingeniero()
+ing.setNombre('Luis')
