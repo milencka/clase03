@@ -6,8 +6,8 @@ def log(debug):#si el valor no varia se puede definir como log(debug=True)
         def wrap(a,b):
             # esta es la funcionalidad de la decoracion
             if debug:
-                print('valor de a',a)
-                print('valor de b', b)
+                print('valor ejemplo de a',a)
+                print('valor ejemplo de b', b)
             return f(a,b)
         return wrap
     return _log
